@@ -3,15 +3,125 @@
   
   <meta charset="utf-8"/>
   <link href="/jackanddope.css" rel="stylesheet"/>
- <style id="global-styles-inline-css">
-   :root{
---wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--12: 1.2rem;--wp--preset--font-size--14: 1.4rem;--wp--preset--font-size--16: 1.6rem;--wp--preset--font-size--24: 2.4rem;--wp--preset--font-size--32: 3.2rem;--wp--preset--font-size--36: 3.6rem;--wp--preset--font-size--40: 4rem;--wp--preset--font-size--48: 4.8rem;--wp--preset--font-size--64: 6.4rem;--wp--preset--font-size--100: 10rem;--wp--preset--font-size--150: 15rem;--wp--preset--font-family--body: Untitled Sans,sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;
-font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}
-.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-12-font-size{font-size: var(--wp--preset--font-size--12) !important;}.has-14-font-size{font-size: var(--wp--preset--font-size--14) !important;}.has-16-font-size{font-size: var(--wp--preset--font-size--16) !important;}.has-24-font-size{font-size: var(--wp--preset--font-size--24) !important;}.has-32-font-size{font-size: var(--wp--preset--font-size--32) !important;}.has-36-font-size{font-size: var(--wp--preset--font-size--36) !important;}.has-40-font-size{font-size: var(--wp--preset--font-size--40) !important;}.has-48-font-size{font-size: var(--wp--preset--font-size--48) !important;}.has-64-font-size{font-size: var(--wp--preset--font-size--64) !important;}.has-100-font-size{font-size: var(--wp--preset--font-size--100) !important;}.has-150-font-size{font-size: var(--wp--preset--font-size--150) !important;}.has-body-font-family{font-family: var(--wp--preset--font-family--body) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-  </style>   
+<style id="global-styles-inline-css">
+  :root {
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--font-size--12: 1.2rem;
+    --wp--preset--font-size--14: 1.4rem;
+    --wp--preset--font-size--16: 1.6rem;
+    --wp--preset--font-size--24: 2.4rem;
+    --wp--preset--font-size--32: 3.2rem;
+    --wp--preset--font-size--36: 3.6rem;
+    --wp--preset--font-size--40: 4rem;
+    --wp--preset--font-size--48: 4.8rem;
+    --wp--preset--font-size--64: 6.4rem;
+    --wp--preset--font-size--100: 10rem;
+    --wp--preset--font-size--150: 15rem;
+    --wp--preset--font-family--body: Untitled Sans, sans-serif;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-decoration: none;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  .has-12-font-size {
+    font-size: var(--wp--preset--font-size--12) !important;
+  }
+
+  .has-14-font-size {
+    font-size: var(--wp--preset--font-size--14) !important;
+  }
+
+  .has-16-font-size {
+    font-size: var(--wp--preset--font-size--16) !important;
+  }
+
+  .has-24-font-size {
+    font-size: var(--wp--preset--font-size--24) !important;
+  }
+
+  .has-32-font-size {
+    font-size: var(--wp--preset--font-size--32) !important;
+  }
+
+  .has-36-font-size {
+    font-size: var(--wp--preset--font-size--36) !important;
+  }
+
+  .has-40-font-size {
+    font-size: var(--wp--preset--font-size--40) !important;
+  }
+
+  .has-48-font-size {
+    font-size: var(--wp--preset--font-size--48) !important;
+  }
+
+  .has-64-font-size {
+    font-size: var(--wp--preset--font-size--64) !important;
+  }
+
+  .has-100-font-size {
+    font-size: var(--wp--preset--font-size--100) !important;
+  }
+
+  .has-150-font-size {
+    font-size: var(--wp--preset--font-size--150) !important;
+  }
+
+  .has-body-font-family {
+    font-family: var(--wp--preset--font-family--body) !important;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :root :where(.wp-block-pullquote) {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+ 
 </head>
  <body class="home wp-singular page-template-default page page-id-7 wp-embed-responsive wp-theme-beaucoup bg-black" style="--initial-vh: 434px;">
   <div class="debug-grid fixed top-0 left-0 w-screen h-screen grid grid-cols-24 gap-grid px-container pointer-events-none opacity-0 z-grid">
