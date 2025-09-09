@@ -1,146 +1,309 @@
 <!DOCTYPE html>
-
 <html class="lenis lenis-smooth" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Jack &amp; Dope — Digital Zine (Scaffold)</title>
-<!-- Fonts (Untitled Sans) assumed available as in original CSS) -->
-<link as="font" crossorigin="" href="TestUntitledSans-Regular.18d1f0.woff" rel="preload" type="font/woff"/>
-<link as="font" crossorigin="" href="TestUntitledSans-Medium.7ec793.woff" rel="preload" type="font/woff"/>
-<link as="font" crossorigin="" href="TestUntitledSans-Bold.254653.woff" rel="preload" type="font/woff"/>
-<link as="font" crossorigin="" href="TestUntitledSans-Light.0bcc1f.woff" rel="preload" type="font/woff"/>
-<!-- Preserved utilities/spacing/animation CSS -->
-<link href="./jackanddope.css" rel="stylesheet"/>
-<style>
-      /* Local overrides kept minimal: only to resolve placeholders sizing */
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Jack &amp; Dope &mdash; Digital Zine (Scaffold)
+  </title>
+  <!-- Fonts (Untitled Sans) assumed available as in original CSS) -->
+  <link as="font" crossorigin="" href="TestUntitledSans-Regular.18d1f0.woff" rel="preload" type="font/woff"/>
+  <link as="font" crossorigin="" href="TestUntitledSans-Medium.7ec793.woff" rel="preload" type="font/woff"/>
+  <link as="font" crossorigin="" href="TestUntitledSans-Bold.254653.woff" rel="preload" type="font/woff"/>
+  <link as="font" crossorigin="" href="TestUntitledSans-Light.0bcc1f.woff" rel="preload" type="font/woff"/>
+  <!-- Preserved utilities/spacing/animation CSS -->
+  <link href="./jackanddope.css" rel="stylesheet"/>
+  <style>
+   /* Local overrides kept minimal: only to resolve placeholders sizing */
       .home-cover__video video { width: 100vw; height: 100vh; object-fit: cover; }
       .player { display:none; }
-    </style>
-</head>
-<body>
-<!-- Debug grid (toggleable via CSS opacity) -->
-<!-- Loader / Intro -->
-<!-- Header / Navigation -->
-<!-- Custom Cursor -->
-<!-- Home Cover / Hero Video -->
-<!-- Works Grid -->
-<!-- Player Modal -->
-<!-- Contact Popup -->
-<!-- Footer -->
-<!-- Local JS bundles (preserved) -->
-<div data-taxi=""><div data-taxi-view=""><div class="debug-grid fixed top-0 left-0 w-screen h-screen grid grid-cols-24 gap-grid px-container pointer-events-none opacity-0 z-grid">
-<!-- 24 columns -->
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div>
-<div class="h-full bg-grid opacity-20"></div></div><div class="bg-white content-center fixed grid grid-cols-24 h-screen items-center justify-center left-0 loader px-container top-0 w-screen z-loader">
-<div class="absolute h-[37.725rem] lg:h-[50.3rem] left-1/2 loader__gif opacity-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[22.065rem] lg:w-[29.42rem]">
-<img alt="" class="w-full h-full object-contain object-center" src="./assets/placeholder.jpg"/>
-</div>
-<div class="col-span-20 md:col-span-12 lg:col-span-8 xl:col-span-6 col-start-3 md:col-start-7 lg:col-start-9 xl:col-start-10 loader__logotype"></div>
-</div><header class="fixed top-0 left-0 right-0 z-header header">
-<div class="header__navigation flex justify-between items-center px-container py-[1rem]">
-<div class="header__menu toggler">Menu</div>
-<nav class="header__overlay hidden">
-<ul class="header__list">
-<li class="header__item"><a class="header__link" href="#works">Works</a></li>
-<li class="header__item"><a class="header__link" href="#about">About</a></li>
-<li class="header__item"><a class="header__link" data-contact="" href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header><div class="cover-cursor fixed top-0 left-0 z-cursor pointer-events-none">
-<div class="cover-cursor__circle"></div>
-<div class="cover-cursor__text"></div>
-<div class="cover-cursor__letter"></div>
-</div><section class="home-cover h-screen w-screen overflow-hidden">
-<div class="home-cover__video">
-<video autoplay="" loop="" muted="" playsinline="" src="./assets/placeholder.mp4"></video>
-</div>
-<div class="content__text absolute bottom-[2rem] left-[2rem]">
-<h1 class="heading-40">Film directors + Creative studio</h1>
-<p class="body-16">Jack and Dope Brand Digital Zine</p>
-</div>
-</section><section class="list-works__grid grid grid-cols-24 gap-grid px-container py-[4rem]" id="works">
-<div class="list-works__navigation col-span-full flex justify-between mb-[1rem]">
-<div class="list-works__term">All</div>
-</div>
-<!-- Example cards that JS can enhance -->
-<article class="list-works__card card-work col-span-12 md:col-span-8">
-<div class="card-work__cover">
-<img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
-<video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4"></video>
-</div>
-</article>
-<article class="list-works__card card-work col-span-12 md:col-span-8">
-<div class="card-work__cover">
-<img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
-<video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4"></video>
-</div>
-</article>
-<article class="list-works__card card-work col-span-12 md:col-span-8">
-<div class="card-work__cover">
-<img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
-<video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4"></video>
-</div>
-</article>
-</section><div class="player fixed inset-0 z-popup">
-<div class="player__overlay absolute inset-0"></div>
-<div class="player__elements absolute inset-0">
-<div class="player__header"><button class="player__close">Close</button></div>
-<div class="player__cover"><video controls="" src="./assets/placeholder.mp4"></video></div>
-<div class="player__controls">
-<button class="player__button player__fullscreen">Fullscreen</button>
-</div>
-</div>
-</div><div class="contact flex items-center justify-center bottom-0 cursor-pointer fixed h-screen left-0 right-0 top-0 w-screen z-contact" data-popup="1" id="contact">
-<div class="absolute bg-black contact__overlay h-full header__overlay left-0 opacity-85 top-0 w-full"></div>
-<div class="absolute body-12 contact__close header__close right-[2rem] lg:right-[3rem] text-white top-[2rem] uppercase">Close</div>
-<div class="absolute contact__cursor flex justify-between left-[3rem] pointer-events-none top-0 -translate-y-1/2 w-[calc(100%_-_6rem)]">
-<div class="lg:block contact__letter h-[12rem] hidden svg-wrapper w-[8rem] will-change-transform"></div>
-<div class="lg:block contact__letter h-[12rem] hidden svg-wrapper w-[7.2rem] will-change-transform"></div>
-</div>
-<div class="flex flex-1 flex-col font-bold gap-y-[1rem] heading-16 md:heading-32 pointer-events-none px-container relative text-white lg:grid lg:grid-cols-24 lg:heading-40">
-<a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-left lg:py-[3.5rem]" href="#" rel="noopener" target="_blank">
-<div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">Address line here</div>
-</a>
-<a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-right lg:py-[3.5rem]" href="mailto:hello@example.com">
-<div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">hello@example.com</div>
-</a>
-<a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-left lg:py-[3.5rem]" href="tel:+10000000000">
-<div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">+1 000 000 0000</div>
-</a>
-</div>
-</div><footer class="px-container py-[4rem]">
-<h2 class="heading-24">keep in touch</h2>
-<ul class="flex gap-x-[2rem]">
-<li><a href="#">Instagram</a></li>
-<li><a href="#">Vimeo</a></li>
-<li><a href="#">Email</a></li>
-</ul>
-</footer><div class="js-stubs hidden"><div class="card-cursor"></div><div class="header__sub-item"></div><img class="list-images__full-width-image" src="./assets/placeholder.jpg"/><img class="list-images__two-images" src="./assets/placeholder.jpg"/><div class="list-works__highlighted"></div><div class="loader__content"></div><img class="logotype-text" src="./assets/placeholder.jpg"/><img class="logotype-text__letter" src="./assets/placeholder.jpg"/><img class="logotype-text__text" src="./assets/placeholder.jpg"/><div class="player__loading"></div><div class="player__sound"></div><div class="player__timeline"></div><div class="player__timeline-current"></div><div class="player__timer-current"></div><div class="player__timer-total"></div><video class="player__video" src="./assets/placeholder.mp4"></video><div class="popup"></div><div class="single-work__background"></div><button class="single-work__button"></button><button class="single-work__close"></button><div class="single-work__content"></div><img class="single-work__cover" src="./assets/placeholder.jpg"/><div class="single-work__description"></div><div class="single-work__header"></div><div class="single-work__more"></div><div class="single-work__player"></div><div class="single-work__tags"></div><div class="single-work__title"></div><img class="team__clipped-image" src="./assets/placeholder.jpg"/><img class="team__logotype-image" src="./assets/placeholder.jpg"/></div><div class="transition__overlay hidden fixed inset-0"></div></div></div><script src="./js/tarteaucitron.js"></script><script src="./js/259.6cf96b.js"></script>
-<script src="./js/353.63a3c6.js"></script>
-<script src="./js/app.00fe34.js"></script>
-<div class="tarteaucitronAlertBigBottom hidden"><button class="tarteaucitronAllow">Allow cookies</button></div><iframe class="hidden" src="about:blank"></iframe></body>
+  </style>
+ </head>
+ <body>
+  <!-- Debug grid (toggleable via CSS opacity) -->
+  <!-- Loader / Intro -->
+  <!-- Header / Navigation -->
+  <!-- Custom Cursor -->
+  <!-- Home Cover / Hero Video -->
+  <!-- Works Grid -->
+  <!-- Player Modal -->
+  <!-- Contact Popup -->
+  <!-- Footer -->
+  <!-- Local JS bundles (preserved) -->
+  <div data-taxi="">
+   <div data-taxi-view="">
+    <div class="debug-grid fixed top-0 left-0 w-screen h-screen grid grid-cols-24 gap-grid px-container pointer-events-none opacity-0 z-grid">
+     <!-- 24 columns -->
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+     <div class="h-full bg-grid opacity-20">
+     </div>
+    </div>
+    <div class="bg-white content-center fixed grid grid-cols-24 h-screen items-center justify-center left-0 loader px-container top-0 w-screen z-loader">
+     <div class="absolute h-[37.725rem] lg:h-[50.3rem] left-1/2 loader__gif opacity-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[22.065rem] lg:w-[29.42rem]">
+      <img alt="" class="w-full h-full object-contain object-center" src="./assets/placeholder.jpg"/>
+     </div>
+     <div class="col-span-20 md:col-span-12 lg:col-span-8 xl:col-span-6 col-start-3 md:col-start-7 lg:col-start-9 xl:col-start-10 loader__logotype">
+     </div>
+    </div>
+    <header class="fixed top-0 left-0 right-0 z-header header">
+     <div class="header__navigation flex justify-between items-center px-container py-[1rem]">
+      <div class="header__menu toggler">
+       Menu
+      </div>
+      <nav class="header__overlay hidden">
+       <ul class="header__list">
+        <li class="header__item">
+         <a class="header__link" href="#works">
+          Works
+         </a>
+        </li>
+        <li class="header__item">
+         <a class="header__link" href="#about">
+          About
+         </a>
+        </li>
+        <li class="header__item">
+         <a class="header__link" data-contact="" href="#contact">
+          Contact
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </header>
+    <div class="cover-cursor fixed top-0 left-0 z-cursor pointer-events-none">
+     <div class="cover-cursor__circle">
+     </div>
+     <div class="cover-cursor__text">
+     </div>
+     <div class="cover-cursor__letter">
+     </div>
+    </div>
+    <section class="home-cover h-screen w-screen overflow-hidden">
+     <div class="home-cover__video">
+      <video autoplay="" loop="" muted="" playsinline="" src="./assets/placeholder.mp4">
+      </video>
+     </div>
+     <div class="content__text absolute bottom-[2rem] left-[2rem]">
+      <h1 class="heading-40">
+       Film directors + Creative studio
+      </h1>
+      <p class="body-16">
+       Jack and Dope Brand Digital Zine
+      </p>
+     </div>
+    </section>
+    <section class="list-works__grid grid grid-cols-24 gap-grid px-container py-[4rem]" id="works">
+     <div class="list-works__navigation col-span-full flex justify-between mb-[1rem]">
+      <div class="list-works__term">
+       All
+      </div>
+     </div>
+     <!-- Example cards that JS can enhance -->
+     <article class="list-works__card card-work col-span-12 md:col-span-8">
+      <div class="card-work__cover">
+       <img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
+       <video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4">
+       </video>
+      </div>
+     </article>
+     <article class="list-works__card card-work col-span-12 md:col-span-8">
+      <div class="card-work__cover">
+       <img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
+       <video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4">
+       </video>
+      </div>
+     </article>
+     <article class="list-works__card card-work col-span-12 md:col-span-8">
+      <div class="card-work__cover">
+       <img alt="Cover" class="card-work__image" src="./assets/placeholder.jpg"/>
+       <video class="card-work__video" loop="" muted="" src="./assets/placeholder.mp4">
+       </video>
+      </div>
+     </article>
+    </section>
+    <div class="player fixed inset-0 z-popup">
+     <div class="player__overlay absolute inset-0">
+     </div>
+     <div class="player__elements absolute inset-0">
+      <div class="player__header">
+       <button class="player__close">
+        Close
+       </button>
+      </div>
+      <div class="player__cover">
+       <video controls="" src="./assets/placeholder.mp4">
+       </video>
+      </div>
+      <div class="player__controls">
+       <button class="player__button player__fullscreen">
+        Fullscreen
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="contact flex items-center justify-center bottom-0 cursor-pointer fixed h-screen left-0 right-0 top-0 w-screen z-contact" data-popup="1" id="contact">
+     <div class="absolute bg-black contact__overlay h-full header__overlay left-0 opacity-85 top-0 w-full">
+     </div>
+     <div class="absolute body-12 contact__close header__close right-[2rem] lg:right-[3rem] text-white top-[2rem] uppercase">
+      Close
+     </div>
+     <div class="absolute contact__cursor flex justify-between left-[3rem] pointer-events-none top-0 -translate-y-1/2 w-[calc(100%_-_6rem)]">
+      <div class="lg:block contact__letter h-[12rem] hidden svg-wrapper w-[8rem] will-change-transform">
+      </div>
+      <div class="lg:block contact__letter h-[12rem] hidden svg-wrapper w-[7.2rem] will-change-transform">
+      </div>
+     </div>
+     <div class="flex flex-1 flex-col font-bold gap-y-[1rem] heading-16 md:heading-32 pointer-events-none px-container relative text-white lg:grid lg:grid-cols-24 lg:heading-40">
+      <a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-left lg:py-[3.5rem]" href="#" rel="noopener" target="_blank">
+       <div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">
+        Address line here
+       </div>
+      </a>
+      <a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-right lg:py-[3.5rem]" href="mailto:hello@example.com">
+       <div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">
+        hello@example.com
+       </div>
+      </a>
+      <a class="contact__item flex md:grid md:grid-cols-24 items-center min-h-[8rem] md:min-h-[15rem] pointer-events-auto px-[2rem] md:px-0 py-[2rem] md:py-[4.5rem] bg-black border-[1px] border-white col-end-23 col-start-3 lg:grid-cols-20 lg:min-h-[12rem] origin-left lg:py-[3.5rem]" href="tel:+10000000000">
+       <div class="col-end-23 col-start-3 contact__text lg:col-end-19 lg:col-start-3">
+        +1 000 000 0000
+       </div>
+      </a>
+     </div>
+    </div>
+    <footer class="px-container py-[4rem]">
+     <h2 class="heading-24">
+      keep in touch
+     </h2>
+     <ul class="flex gap-x-[2rem]">
+      <li>
+       <a href="#">
+        Instagram
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Vimeo
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Email
+       </a>
+      </li>
+     </ul>
+    </footer>
+    <div class="js-stubs hidden">
+     <div class="card-cursor">
+     </div>
+     <div class="header__sub-item">
+     </div>
+     <img class="list-images__full-width-image" src="./assets/placeholder.jpg"/>
+     <img class="list-images__two-images" src="./assets/placeholder.jpg"/>
+     <div class="list-works__highlighted">
+     </div>
+     <div class="loader__content">
+     </div>
+     <img class="logotype-text" src="./assets/placeholder.jpg"/>
+     <img class="logotype-text__letter" src="./assets/placeholder.jpg"/>
+     <img class="logotype-text__text" src="./assets/placeholder.jpg"/>
+     <div class="player__loading">
+     </div>
+     <div class="player__sound">
+     </div>
+     <div class="player__timeline">
+     </div>
+     <div class="player__timeline-current">
+     </div>
+     <div class="player__timer-current">
+     </div>
+     <div class="player__timer-total">
+     </div>
+     <video class="player__video" src="./assets/placeholder.mp4">
+     </video>
+     <div class="popup">
+     </div>
+     <div class="single-work__background">
+     </div>
+     <button class="single-work__button">
+     </button>
+     <button class="single-work__close">
+     </button>
+     <div class="single-work__content">
+     </div>
+     <img class="single-work__cover" src="./assets/placeholder.jpg"/>
+     <div class="single-work__description">
+     </div>
+     <div class="single-work__header">
+     </div>
+     <div class="single-work__more">
+     </div>
+     <div class="single-work__player">
+     </div>
+     <div class="single-work__tags">
+     </div>
+     <div class="single-work__title">
+     </div>
+     <img class="team__clipped-image" src="./assets/placeholder.jpg"/>
+     <img class="team__logotype-image" src="./assets/placeholder.jpg"/>
+    </div>
+    <div class="transition__overlay hidden fixed inset-0">
+    </div>
+   </div>
+  </div>
+  <script src="./js/259.6cf96b.js">
+  </script>
+  <script src="./js/353.63a3c6.js">
+  </script>
+  <script src="./js/app.00fe34.js">
+  </script>
+  <iframe class="hidden" src="about:blank">
+  </iframe>
+ </body>
 </html>
