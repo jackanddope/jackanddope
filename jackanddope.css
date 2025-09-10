@@ -2354,17 +2354,3 @@ body {
   max-height: 100vh;
 }
 
-.loader {
-  animation: fadeOut 1s ease forwards;
-  animation-delay: 3s; /* disappear after 3s */
-}
-@keyframes fadeOut {
-  to { opacity: 0; visibility: hidden; }
-}
-
-@media (min-width: 3000px) {
-  .content__text {
-    font-size: 2rem; /* scale appropriately */
-  }
-}
-
