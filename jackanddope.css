@@ -2340,7 +2340,7 @@ body:not(.wp-admin).no-scroll {
 }
 
 body {
-  max-width: 2560px;   /* don’t let layout blow up beyond 4K */
+  max-width: 10000px;   /* don’t let layout blow up beyond 4K */
   margin: 0 auto;      /* center content */
 }
 
