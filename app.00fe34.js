@@ -2365,9 +2365,7 @@
                     e.href.indexOf(this.siteUrl) > -1 && (e.href = `${window.location.origin}/${e.href.split(this.siteUrl)[1]}`)
                 }
             }
-            addConsoleBrand() {
-                console.log("\n %c ✦ Merci Beaucoup ✦ ", "background: #00F; color: #fffaf5; padding: 5px 0; margin-right: 5px;", "https://beaucoup.studio/ \n\n")
-            }
+           
         }
         class _ {
             constructor() {
