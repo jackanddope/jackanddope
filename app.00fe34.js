@@ -403,7 +403,7 @@
                     autoplay: !1,
                     container: this.$logotype,
                     loop: !0,
-                    path: "/wp-content/themes/beaucoup/logotype.json",
+                    path: "/logotype.json",
                     renderer: "svg"
                 })
             }
