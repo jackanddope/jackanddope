@@ -2338,3 +2338,9 @@ body:not(.wp-admin).no-scroll {
         padding-top: 37.5rem
     }
 }
+
+body {
+  max-width: 2560px;   /* don’t let layout blow up beyond 4K */
+  margin: 0 auto;      /* center content */
+}
+
