@@ -2149,7 +2149,7 @@
                     u.detect.isMobile ? a.ZP.to(this.$fromOverlay, {
                         autoAlpha: 1,
                         duration: .35,
-                        ease: "beaucoup.alpha",
+                        ease: "jackdope.ease",
                         onComplete: () => {
                             this.from.remove(),
                             u.smoothScroll && u.smoothScroll.scrollTo(0, {
@@ -2171,7 +2171,7 @@
                     }, {
                         autoAlpha: 0,
                         duration: .35,
-                        ease: "beaucoup.alpha",
+                        ease: "jackdope.ease",
                         onComplete: () => {
                             u.smoothScroll && u.smoothScroll.start(),
                             i()
@@ -2248,7 +2248,7 @@
                 a.p8.registerPlugin(d.i),
                 u.scrollTrigger = d.i,
                 a.p8.registerPlugin(c.t),
-                c.t.create("beaucoup.alpha", ".25, .46, .45, .9"),
+                c.t.create("jackdope.ease", ".25, .46, .45, .9"),
                 this.start()
             }
             start() {
@@ -2365,7 +2365,9 @@
                     e.href.indexOf(this.siteUrl) > -1 && (e.href = `${window.location.origin}/${e.href.split(this.siteUrl)[1]}`)
                 }
             }
-           
+            addConsoleBrand() {
+                console.log("\n %c ✦ Merci Beaucoup ✦ ", "background: #00F; color: #fffaf5; padding: 5px 0; margin-right: 5px;", "https://jackdope.studio/ \n\n")
+            }
         }
         class _ {
             constructor() {
