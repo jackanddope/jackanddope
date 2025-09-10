@@ -2366,7 +2366,7 @@
                 }
             }
             addConsoleBrand() {
-                console.log("\n %c ✦ Merci Beaucoup ✦ ", "background: #00F; color: #fffaf5; padding: 5px 0; margin-right: 5px;", "https://jackdope.studio/ \n\n")
+                console.log("\n %c ✦ JackandDope ✦ ", "background: #00F; color: #fffaf5; padding: 5px 0; margin-right: 5px;", "https://jackdope.studio/ \n\n")
             }
         }
         class _ {
