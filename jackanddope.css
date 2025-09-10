@@ -606,7 +606,8 @@ img,video {
 }
 
 .w-screen {
-    width: 100vw
+  width: 100vw;
+  max-width: 100%;
 }
 
 .w-\[calc\(100\%_-_6rem\)\] {
@@ -2339,18 +2340,4 @@ body:not(.wp-admin).no-scroll {
     }
 }
 
-body {
-  max-width: 10000px;   /* don’t let layout blow up beyond 4K */
-  margin: 0 auto;      /* center content */
-}
-
-.home-cover__video video,
-.card-work__video,
-.card-work__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 100vw;
-  max-height: 100vh;
-}
 
